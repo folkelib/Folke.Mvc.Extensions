@@ -31,7 +31,7 @@ namespace Folke.Mvc.Extensions
 
         public CreatedResult<T> Created<T>(string routeName, int id, T content)
         {
-            return new CreatedResult<T>(new Uri(this.Url.Link(routeName, id)), content);
+            return new CreatedResult<T>(new Uri(this.Url.Link(routeName,new { id })), content);
         }
     }
 }
