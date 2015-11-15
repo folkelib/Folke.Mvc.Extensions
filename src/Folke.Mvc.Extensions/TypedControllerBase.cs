@@ -29,7 +29,7 @@ namespace Folke.Mvc.Extensions
             return new HttpBadRequestObjectResult<T>(error);
         }
 
-        public CreatedResult<T> Created<T>(string routeName, int id, T content)
+        public CreatedResult<T> Created<T, TKey>(string routeName, TKey id, T content)
         {
             return new CreatedResult<T>(new Uri(this.Url.Link(routeName,new { id })), content);
         }
