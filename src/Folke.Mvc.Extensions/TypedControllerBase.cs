@@ -24,7 +24,7 @@ namespace Folke.Mvc.Extensions
             return new HttpBadRequestObjectResult<T>(error);
         }
 
-        public HttpBadRequestObjectResult<T> BadRequest<T>(ModelState error)
+        public HttpBadRequestObjectResult<T> BadRequest<T>(ModelStateDictionary error)
         {
             return new HttpBadRequestObjectResult<T>(error);
         }

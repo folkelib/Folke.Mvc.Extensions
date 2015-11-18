@@ -9,7 +9,7 @@ namespace Folke.Mvc.Extensions
         {
         }
 
-        public HttpBadRequestObjectResult(ModelState error) : base(error)
+        public HttpBadRequestObjectResult(ModelStateDictionary error) : base(error)
         {
         }
     }
