@@ -3,16 +3,16 @@
   "description": "Folke.Mvc.Extensions Class Library",
   "authors": [ "Sidoine" ],
   "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
+  "projectUrl": "https://github.com/folkelib/Folke.Mvc.Extensions",
+  "licenseUrl": "http://opensource.org/licenses/MIT",
 
   "dependencies": {
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final"
   },
 
   "frameworks": {
-    "dnx451": { },
-    "dnxcore50": {
+    "net451": { },
+    "dotnet5.4": {
       "dependencies": {
         "Microsoft.CSharp": "4.0.1-beta-*",
         "System.Collections": "4.0.11-beta-*",
