@@ -3,3 +3,5 @@
 *.lock.json
 *.v2.ncrunchsolution
 *.crunchsolution.cache
+bin
+obj

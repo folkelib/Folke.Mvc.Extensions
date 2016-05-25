@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Folke.Mvc.Extensions
 {

@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNet.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Folke.Mvc.Extensions
 {
-    public class HttpNotFoundResult<T> : HttpNotFoundResult, IHttpActionResult<T>
+    public class HttpNotFoundResult<T> : NotFoundResult, IHttpActionResult<T>
     {
     }
 }

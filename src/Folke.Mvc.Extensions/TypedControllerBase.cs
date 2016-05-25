@@ -1,6 +1,6 @@
 ﻿using System;
-using Microsoft.AspNet.Mvc;
-using Microsoft.AspNet.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Folke.Mvc.Extensions
 {
@@ -36,7 +36,7 @@ namespace Folke.Mvc.Extensions
 
         public CreatedResult<T> Created<T, TKey>(string routeName, TKey id, T content)
         {
-            return new CreatedResult<T>(new Uri(this.Url.Link(routeName,new { id })), content);
+            return new CreatedResult<T>(new Uri(Url.Link(routeName,new { id })), content);
         }
     }
 }
