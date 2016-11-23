@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.3.0-*",
+  "version": "1.4.0-*",
   "description": "Folke.Mvc.Extensions Class Library",
   "authors": [ "Sidoine" ],
   "packOptions": {
@@ -9,7 +9,7 @@
   },
 
   "dependencies": {
-    "Microsoft.AspNetCore.Mvc": "1.0.0"
+    "Microsoft.AspNetCore.Mvc": "1.1.0"
   },
 
   "frameworks": {
