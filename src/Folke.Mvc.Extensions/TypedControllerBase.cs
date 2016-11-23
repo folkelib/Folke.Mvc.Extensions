@@ -13,17 +13,27 @@ namespace Folke.Mvc.Extensions
                 Response.RegisterForDispose(disposable);
             return new HttpOkObjectResult<T>(value);
         }
-        
+
         public HttpNotFoundResult<T> NotFound<T>()
         {
             return new HttpNotFoundResult<T>();
+        }
+
+        public HttpInternalServerErrorObjectResult<T> InternalServerError<T>(object error)
+        {
+            return new HttpInternalServerErrorObjectResult<T>(error);
+        }
+
+        public HttpServiceUnavailableObjectResult<T> ServiceUnavailable<T>(object error)
+        {
+            return new HttpServiceUnavailableObjectResult<T>(error);
         }
 
         public HttpUnauthorizedResult<T> Unauthorized<T>()
         {
             return new HttpUnauthorizedResult<T>();
         }
-        
+
         public HttpBadRequestObjectResult<T> BadRequest<T>(object error)
         {
             return new HttpBadRequestObjectResult<T>(error);
